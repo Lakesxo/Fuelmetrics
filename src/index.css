@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +13,140 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contaner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+}
+h2 {
+  color: #E37263;
+}
+h2.mgbot {
+  margin-bottom: 30px;
+}
+.loginCont {
+  box-shadow: 0px 11px 30px -8px #E0E0E0;
+  border-radius: 28px;
+  padding: 40px;
+  width: 40%;
+  margin-top: 40px;
+}
+.addDrCont {
+  box-shadow: 0px 11px 30px -8px #E0E0E0;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 40px;
+  background-color: #fff;
+}
+.formField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+label {
+  color: #757575;
+}
+input {
+  border: 1px solid #E5E5E5;
+  padding: 7px;
+  border-radius: 3px;
+}
+button.login {
+  width: 100%;
+  background-color: #E37263;
+  padding: 10px 0px;
+  border: 1px solid #E37263;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button.delete {
+  width: 100%;
+  background-color: #F11E1E;
+  padding: 10px 0px;
+  border: 1px solid #F11E1E;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.flexDash {
+  display: flex;
+}
+main {
+  width: 75%;
+  background-color: #F0F0F0;
+  min-height: 100vh;
+  padding: 50px;
+}
+.sidebar {
+  width: 25%;
+}
+.logo {
+  box-shadow: 0px 4px 41px 1px rgba(224, 224, 224, 0.6);
+  padding: 30px 0px;
+  text-align: center;
+}
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+}
+button.links {
+  padding: 10px 0px;
+  border: 1px solid #E37263;
+  color: #E37263;
+  border-radius: 3px;
+  margin-top: 30px;
+  cursor: pointer;
+  width: 100%;
+}
+button.active {
+  background-color: #E37263;
+  padding: 10px 0px;
+  border: 1px solid #E37263;
+  color: #fff;
+  border-radius: 3px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+button.logout {
+  border: 1px solid #F11E1E;
+  background-color: #fff;
+  color: #F11E1E;
+  padding: 10px 0px;
+  margin-top: 100px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button.logout:hover {
+  background-color: #F11E1E;
+  color: #fff;
+  transition: 0.2s;
+}
+h3 {
+  color: #757575;
+}
+.driverCont {
+  box-shadow: 0px 11px 30px -8px #E0E0E0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 30px;
+  width: 250px;
+  margin-right: 20px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+p.name {
+  color: #757575;
+  font-size: 23px;
+}
+.driverList {
+  display: flex;
+  flex-wrap: wrap;
 }
